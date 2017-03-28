@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Quiz App</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+<div class="container">
+	<section class="introduction">
+		<h1>Quiz App</h1>
+		<p>This Quiz is about the game Overwatch, created by Blizzard Entertainment.
+		Please take as much time as you need to answer all of the questions.
+		When you are ready to begin, hit the start button. Good Luck!
+		</p>
+		<button class="start-quiz">
+		<span class="button-label">Start</span>
+		</button>
+	</section>
+
+	<section class="hidden quiz">
+		<form id="quiz-form">
+		<p class = "question"></p>
+		<label class = "option"><input type="radio" name="option" value="1"><span id='option1'>First Answer</span></label> 
+		<label class = "option"><input type="radio" name="option" value="2"><span id='option2'>Second Answer</span></label>
+		<label class = "option"><input type="radio" name="option" value="3"><span id='option3'>Third Answer</span></label>
+		<label class = "option"><input type="radio" name="option" value="4"><span id='option4'>Fourth Answer</span></label>
+		</form>
+
+		<button class="hidden next">
+		<span class="button-label">Next</span>
+		</button>
+
+		<button class="submit">
+		<span class="button-label">Submit</span>
+		</button>
+
+		<p class='feedback'></p>
+
+		</section>
+
+	<section class="hidden results">
+		<p class='final-score'></p>
+		<button class="reset">
+		<span class="button-label">Start Over</span>
+		</button>
+	</section>
+
+</div>
+	<!-- link to jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- link to your app.js -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
